@@ -1,0 +1,48 @@
+.Stack{
+  display: flex;
+  
+}
+
+.img {
+  float: left;
+  margin-right: 10px;
+  
+}
+
+h2{
+  overflow: hidden;
+}
+
+div.scroll-container {
+  background-color: white;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+/* div.scroll-container {
+  background-color: white;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 20px;
+  position: relative;
+} */
+
+/* div.scroll-content {
+  display: inline-block;
+  animation: scroll 20s linear infinite; 
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+} */
+
+div.scroll-container img {
+  display: inline-block;
+  padding: 10px;
+}

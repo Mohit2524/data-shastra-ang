@@ -1,0 +1,31 @@
+<div class="services-header">
+  <img src="D.svg" alt="Logo">
+  <h2 style="margin-left: 5px;">Services</h2>
+</div>
+
+
+<p-carousel 
+    [value]="services" 
+    [numVisible]="3" 
+    [numScroll]="3" 
+    [circular]="true" 
+    autoplayInterval="3000">
+    <ng-template let-service pTemplate="item">
+        <div class="border-1 surface-border border-round m-2 p-3">
+            <div class="mb-3">
+                <div class="relative mx-auto">
+                    <img 
+                        src="./assets/{{service.image}} " 
+                        [alt]="service.title" 
+                        class="w-full border-round" />
+                </div>
+            </div>
+            <div class="mb-3 font-medium">
+                {{ service.title }}
+            </div>
+            <div class="font-normal">
+                {{ service.description }}
+            </div>
+        </div>
+    </ng-template>
+</p-carousel>

@@ -1,0 +1,25 @@
+ul li:before {
+    content: '➤';
+    position: absolute;
+    left: 0;
+    color: black;
+  }
+
+.class{
+  text-decoration: none;
+}
+
+.header{
+  width: 768px; 
+  height: 222px; 
+  left: 64px; 
+  top: 336px;
+}
+
+
+
+
+.sas-header{
+    display: flex;
+    flex: 3;
+}

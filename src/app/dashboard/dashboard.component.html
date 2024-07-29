@@ -1,0 +1,42 @@
+<div class="banner" style="background-image: url('about_us_sider1.png'); height: 600px; width:1290px;">
+  <div class="banner1">
+    <p style="font-size:64px">Elevate Your Business Operations</p>
+    <p style="font-size:64px">With Our Cutting-Edge Solutions</p>
+    </div>
+</div>
+   
+<app-philosophy />
+ <app-services />
+ <app-saas-offerings/>
+
+ <app-teck-stack />
+ <div class="Stack">
+  <img src="D.svg">
+  <h2 style="margin-left: 5px;">CASE STUDIES</h2>
+  </div>
+  
+  <p-carousel 
+  [value]="products" 
+  [numVisible]="3" 
+  [numScroll]="3" 
+  [circular]="true" 
+  autoplayInterval="3000">
+  <ng-template let-product pTemplate="item">
+      <div class="border-1 surface-border border-round m-2 p-3">
+          <div class="mb-3">
+              <div class="relative mx-auto">
+                  <img 
+                      [src]="product.image" 
+                      [alt]="product.name" 
+                      class="w-full border-round" />
+              </div>
+          </div>
+          <div class="mb-3 font-medium">
+              {{ product.name }}
+          </div>
+      </div>
+  </ng-template>
+  </p-carousel>
+  
+  <app-get-info/>
+<app-footer />

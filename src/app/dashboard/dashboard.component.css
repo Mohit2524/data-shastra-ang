@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.bottom-left{
+    padding-bottom:0lvh;
+
+}
+
+.banner1{
+    color: white;
+    padding-top: 385px;
+    padding-left: 60px;
+}
+
+/*//////////////////////////////////////////////////*/
+
+.Stack{
+    display: flex;
+    margin-top: 20px;
+  
+  }
+  
+  
+  .row{
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .card {
+    max-width: 33.333%;
+    padding: .75rem;
+    margin-bottom: 2rem;
+    border: 0;
+    flex-basis: 33.333%;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+  
+  .card > img {
+    margin-bottom: .75rem;
+    width: 100%;
+  }
+  
+  .card-text {
+    font-size: 85%;
+  }

@@ -1,0 +1,21 @@
+/* h1{ 
+    color: blue;
+} */
+
+*{
+    margin:start;
+    padding: 0;
+}
+
+
+/* .navbar-brand {
+    padding-left: 20px;
+} */
+.nav-link{
+    color: #363636;
+    text-decoration: none;
+}
+
+.nav-link.active{
+    border-bottom: 2px solid #1E00D3;
+}
