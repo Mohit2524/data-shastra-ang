@@ -20,8 +20,56 @@ body{
     font-size: 14px;
     color: #696969;
 }
+
+.p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+    background: #9747FF;
+    border-color:  #9747FF;
+   color: white;
+    border-radius: 20px;
+    border: 1px solid;
+    text-decoration: none;
+    margin-left: 69px;
+
+}
+
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+     background-color: none !important; 
+}
+mat-label {
+    color: white !important;
+  }
+
+
+  input {
+        color: white !important;
+  }
 ul,li{
     padding: 0;
     margin: 0;
 }
 html, body { height: 100%; }
+
+/* .custom-card[_ngcontent-ng-c608740622] {
+    background-color: rgb(237, 234, 222);
+    padding: 24px;
+    border-radius: 15px;
+    text-align: center;
+    width: 421px;
+    height: 360px;
+
+} */
+
+/* .p-tabview .p-tabview-panels {
+    background-image: url('/assets/Blue.jpg');
+    width: 788px;
+    height: 282px;
+    margin-top: 300px;
+    margin-left: 45px;
+    padding: 0.875rem 1.125rem 1.125rem 1.125rem;
+    border: 0 none;
+    color: #334155;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    color: white;
+  } */

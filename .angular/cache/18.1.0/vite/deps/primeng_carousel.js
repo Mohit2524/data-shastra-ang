@@ -1,13 +1,21 @@
 import {
   ChevronLeftIcon,
   ChevronRightIcon
-} from "./chunk-ZU4S6HEM.js";
+} from "./chunk-RSUY5LTC.js";
 import {
   BaseIcon,
   DomHandler,
   Ripple,
   RippleModule
-} from "./chunk-6FRTYZMH.js";
+} from "./chunk-ICNJTCBM.js";
+import {
+  Footer,
+  Header,
+  PrimeNGConfig,
+  PrimeTemplate,
+  SharedModule,
+  UniqueComponentId
+} from "./chunk-TUGXKCA3.js";
 import {
   CommonModule,
   DOCUMENT,
@@ -18,14 +26,6 @@ import {
   NgTemplateOutlet,
   isPlatformBrowser
 } from "./chunk-SKHS36JC.js";
-import {
-  Footer,
-  Header,
-  PrimeNGConfig,
-  PrimeTemplate,
-  SharedModule,
-  UniqueComponentId
-} from "./chunk-TUGXKCA3.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,

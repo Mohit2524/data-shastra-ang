@@ -10,6 +10,12 @@ import { RouteOptimizationComponent } from './route-optimization/route-optimizat
 import { DishaComponent } from './disha/disha.component';
 import { VehiclePerformanceComponent } from './vehicle-performance/vehicle-performance.component';
 import { TransportationSpendComponent } from './transportation-spend/transportation-spend.component';
+import { ServiceDataTransformationComponent } from './service-data-transformation/service-data-transformation.component';
+import { ServiceMLPipelineComponent } from './service-ml-pipeline/service-ml-pipeline.component';
+import { ServiceBusinessIntelligentComponent } from './service-business-intelligent/service-business-intelligent.component';
+import { ServiceAIMLBasedSolutionComponent } from './service-ai-ml-based-solution/service-ai-ml-based-solution.component';
+import { ServiceOptimizationComponent } from './service-optimization/service-optimization.component';
+import { ServiceBusinessConsultingComponent } from './service-business-consulting/service-business-consulting.component';
  export const routes: Routes = [
   {
     path: '',
@@ -28,7 +34,14 @@ import { TransportationSpendComponent } from './transportation-spend/transportat
   {path: 'Route-Optimization', component: RouteOptimizationComponent},
   {path: 'Disha', component: DishaComponent},
   {path:'Vehicle-Performance', component: VehiclePerformanceComponent},
-  {path:'Transportation-Spend', component: TransportationSpendComponent}
+  {path:'Transportation-Spend', component: TransportationSpendComponent},
+  {path: 'Data-Transformation', component: ServiceDataTransformationComponent},
+  {path: 'saas-offerings', component: SaasOfferingsComponent},
+  {path: 'ML-Pipeline', component: ServiceMLPipelineComponent},
+  {path: 'Business-Intelligent', component: ServiceBusinessIntelligentComponent},
+  {path: 'AI-ML-Based-Solution', component: ServiceAIMLBasedSolutionComponent},
+  {path: 'Optimization', component: ServiceOptimizationComponent},
+  {path:'Business-Consulting', component: ServiceBusinessConsultingComponent},
 
   
 ];

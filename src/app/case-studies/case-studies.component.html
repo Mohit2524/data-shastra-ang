@@ -1,58 +1,88 @@
-<div class="top" style="background-image: url('case-blank.svg'); height: 348px; width: 1312px;">
-    <div class="Stack" style="color: white;">
-        <img src="d_icon_white.png" style="height: 16px; width: 22px; margin-top: 22px;">
-        <h2 style="margin-left: 8px; font-weight: 400; line-height: 20px;">CASE STUDIES</h2>
-        </div>
-
-    <div>
-        <p style="font-size: 64px; margin-left: 510px; line-height: 0;">Illuminating</p>
-        <p style="font-size: 64px; margin-left: 257px; line-height: 0;">Success Through Case Studies</p>
-    </div>
-</div>
-
-<div class="img" style="display: flex; justify-content: space-between;">
-<div class="card" style=" margin-top: 64px;">
-    <img src="Data-driven Engagement.svg" alt="Avatar" style="width:640px; height: 340px;">
-    <div class="container">
-      <a routerLink="/Data-driven Engagement" routerLinkActive="active" style="font-size: 24px; color: blue; line-height: 0;  text-decoration: none; padding-top: 16px;">Data-Driven Engagement & Retention Success</a>
-      <p style="line-height: 1;">By analyzing customer interactions and churn patterns, DataShastra tailored marketing strategies to boost engagement and retain inactive customers effectively.</p>
-    </div>
-</div>
-
-
-    <div class="card" style=" margin-top: 64px;">
-        <img src="Route-Optimization.svg" alt="Avatar" style="width:640px; height: 340px;">
-        <div class="container">
-          <a routerLink="/Route-Optimization" routerLinkActive="active" style="font-size: 24px; color: blue; line-height: 0; text-decoration: none;">Route Optimization - Optimus</a>
-          <p style="line-height: 1;">Optimus, our route optimization solution, transformed logistics operations by finding the most efficient paths, reducing delivery times and cost up to  by 10-25%.</p>
+<div class="surface-section mt-5 h-21rem w-82rem" style="background-image: url('case-blank.svg');">  <!---height: 348px; width: 1312px;-->
+    <div class="text-center ">
+        <div class="flex justify-content-center align-items-center">
+            <img src="d_icon_white.png" class="h-1rem w-1rem mr-3 mt-4">
+            <h2 class="text-1xl text-white pt-4">CASE STUDIES</h2>
         </div>
     </div>
-  </div>
 
-  <div class="img2">
-  <div class="card2">
-    <img src="Disha.svg" alt="DISHA: Light-weight In-House Routing Solution">
-    <div class="container1">
-        <a routerLink="/Disha" routerLinkActive="active" style="text-decoration: none;">DISHA: Light-weight In-House Routing Solution</a>
-        <p>An offline and lightweight implementation to derive road distances from data initially collected from Open ...</p>
+    <div class="text-center">
+        <p class="text-7xl text-white" style="line-height: 0;">Illuminating</p>
+        <p class="text-7xl text-white" style="line-height: 0;">Success Through Case Studies</p>
     </div>
 </div>
-<div class="card2">
-    <img src="Vehicle-Performance.svg" alt="Vehicle Performance/OTD Dashboard">
-    <div class="container1">
-        <a routerLink="/Vehicle-Performance" routerLinkActive="active" style="text-decoration: none;">Vehicle Performance/OTD Dashboard</a>
-        <p>Our real-time dashboard provides insights into vehicle performance and on-time delivery metrics, enabling ...</p>
+
+<div class="grid mt-4">
+    <div class="col-12 lg:col-6 mb-4">
+        <div class="card" class="w-38rem h-28rem shadow-2 surface-card ">
+            <a routerLink="/Data-driven Engagement" routerLinkActive="active">
+                <img src="Data-driven Engagement.svg" alt="Data-Driven Engagement" class="w-41rem h-21rem pl-3" style="object-fit: cover;" >
+            </a>
+            <div class="mt-4 ml-4">
+                <a routerLink="/Data-driven Engagement" routerLinkActive="active" class="text-2xl text-primary hover:text-primary-dark no-underline">
+                    Data-Driven Engagement & Retention Success
+                </a>
+                <p class="mt-2 text-base">By analyzing customer interactions and churn patterns, DataShastra tailored marketing strategies to boost engagement and retain inactive customers effectively.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 lg:col-6 mb-4">
+        <div class="card" class="w-38rem h-28rem shadow-2 surface-card ">
+            <a routerLink="/Route-Optimization" routerLinkActive="active">
+                <img src="Route-Optimization.svg" alt="Route Optimization" class="w-41rem h-21rem pl-3" style="object-fit: cover;" >
+            </a>
+            <div class="mt-4 ml-4">
+                <a routerLink="/Route-Optimization" routerLinkActive="active" class="text-2xl text-primary hover:text-primary-dark no-underline">
+                    Route Optimization - Optimus
+                </a>
+                <p class="mt-2 text-base">Optimus, our route optimization solution, transformed logistics operations by finding the most efficient paths, reducing delivery times and cost by 10-25%.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-8 lg:col-4 mb-4">
+        <div class="card " class=" w-27rem h-25rem shadow-2 surface-card">
+            <a routerLink="/Disha" routerLinkActive="active">
+                <img src="Disha.svg" alt="DISHA: Light-weight In-House Routing Solution" class="border-round-top w-27rem h-16rem" style="object-fit: cover;" >
+            </a>
+            <div class="mt-4 ml-2">
+                <a routerLink="/Disha" routerLinkActive="active" class="text-xl text-primary hover:text-primary-dark no-underline">
+                    DISHA: Light-weight In-House Routing Solution
+                </a>
+                <p class="mt-2 text-base">An offline and lightweight implementation to derive road distances from data initially collected from Open ...</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-8 lg:col-4 mb-4">
+        <div class="card" class=" w-27rem h-25rem shadow-2 surface-card">
+            <a routerLink="/Vehicle-Performance" routerLinkActive="active">
+                <img src="Vehicle-Performance.svg" alt="Vehicle Performance/OTD Dashboard" class="border-round-top w-27rem h-16rem" style="object-fit: cover;" >
+            </a>
+            <div class="mt-4 ml-2">
+                <a routerLink="/Vehicle-Performance" routerLinkActive="active" class="text-xl text-primary hover:text-primary-dark no-underline">
+                    Vehicle Performance/OTD Dashboard
+                </a>
+                <p class="mt-2 text-base">Our real-time dashboard provides insights into vehicle performance and on-time delivery metrics, enabling ...</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-8 lg:col-4 mb-3">
+        <div class="card" class=" w-27rem h-25rem shadow-2 surface-card">
+            <a routerLink="/Transportation-Spend" routerLinkActive="active">
+                <img src="Transportation-Spend.svg" alt="Transportation Spend Analytics" class="border-round-top w-27rem h-16rem" style="object-fit: cover;" >
+            </a>
+            <div class="mt-4 ml-2">
+                <a routerLink="/Transportation-Spend" routerLinkActive="active" class="text-xl text-primary hover:text-primary-dark no-underline">
+                    Transportation Spend Analytics
+                </a>
+                <p class="mt-2 text-base">Our comprehensive analytics broke down transportation costs at an unprecedented granular level, revealing ...</p>
+            </div>
+        </div>
     </div>
 </div>
-<div class="card2">
-    <img src="Transportation-Spend.svg" alt="Transportation Spend Analytics">
-    <div class="container1">
-        <a routerLink="/Transportation-Spend" routerLinkActive="active" style="text-decoration: none;" >Transportation Spend Analytics</a>
-        <p>Our comprehensive analytics broke down transportation costs at an unprecedented granular level, revealing ...</p>
-    </div>
-</div>
-</div>
 
-<router-outlet/>
-<app-footer/>
-
+<router-outlet></router-outlet>
+<app-footer></app-footer>
