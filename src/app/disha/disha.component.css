@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.start{
+    height: 294px;
+    width: 421px;
+    background-color: rgb(240, 240, 240);
+   
+}
+
+.start p{
+    color: #1E00D3;
+    padding-left: 24px;
+}
