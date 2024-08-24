@@ -78,14 +78,8 @@
 }
 
 .container{
-    margin-top: 40px;
-    display: flex;
-    flex-direction: row;
-
-    padding: 0px;
-    width: 420px; 
-    height: 204px; 
-    left: 40px; top: 40px;
+   
+   
 }
 
 
@@ -114,6 +108,7 @@
     justify-items: center;
     margin-left: 300px;
     padding-top: 25px;
+    position: relative;
 
 }
 
@@ -144,8 +139,10 @@
     color: white
 } */
 
+::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    background-color: none !important;
+}
 
 
-
-
+ .container { margin-left: 45px; margin-right: 45px; }
 

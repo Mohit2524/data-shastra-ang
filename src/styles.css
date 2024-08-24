@@ -1,9 +1,9 @@
-.container { margin-left: auto; margin-right: auto; }
-@media only screen and (max-width: 767px) { .container { max-width: 100%; } }
+ .container { margin-top: 65px; }
+/* @media only screen and (max-width: 767px) { .container { max-width: 100%; } }
 @media only screen and (min-width: 768px) { .container { max-width: 740px; } }
 @media only screen and (min-width: 992px) { .container { max-width: 980px; } }
 @media only screen and (min-width: 1200px) { .container { max-width: 1140px; } }
-@media only screen and (min-width: 1400px) { .container { max-width: 1312px; } }
+@media only screen and (min-width: 1400px) { .container { max-width: 1312px; } }  */
 
 
 html, body {
@@ -22,6 +22,7 @@ body{
 }
 
 .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+    margin-left: 32px !important;
     background: #9747FF;
     border-color:  #9747FF;
     color: white;
@@ -52,6 +53,13 @@ ul,li{
     margin: 0;
 }
 html, body { height: 100%; }
+
+.mdc-notched-outline__notch
+{
+  border-right: none;
+}
+
+
 
 /* .custom-card[_ngcontent-ng-c608740622] {
     background-color: rgb(237, 234, 222);

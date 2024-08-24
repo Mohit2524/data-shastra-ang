@@ -50,5 +50,19 @@ export class DashboardComponent {
     }
  ];
 
+ selectedTabIndex: number = 0;
+
+  images = [
+    '/assets/ds_offerring1_optimus.png', 
+    'assets/ds_offerring1.png', 
+    'assets/ds_offerring1_hisaab.png', 
+    'assets/ds_offerring1_thirdeye.png'  
+  ];
+
+  onTabChange(event: any) {
+    this.selectedTabIndex = event.index;
+  }
+
+
 
 }

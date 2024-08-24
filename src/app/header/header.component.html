@@ -1,30 +1,36 @@
 <nav class="flex justify-content-between border-50 border-white fixed-top w-full surface-0 shadow">
   <div class="navbar-brand">
     <a href="header" routerLink="/dashboard" routerLinkActive="active">
-      <img class="ml-8" src="heading.svg" alt="heading">
+      <img  src="heading.svg" alt="heading"> <!--style="width: 100%; display: block; height: auto;" -->
     </a>
   </div>
-                                    
-  <ul class="navbar-nav ml-auto flex list-none align-items-center">
-    <li class="nav-item mx-3 mt-2">
+
+  <input type="checkbox" id="check">
+  <label for="check" class="checkbtn">
+    &#9776;
+  </label>
+
+  <ul class="navbar-nav ml-auto flex list-none align-items-start lg:align-items-center ">
+    <li class="nav-item mx-4 mt-2">
       <a class="nav-link px-3 pb-2 md:z-1 flex flex-row align-items-center" (click)="showDialog()" outerLinkActive="active">
-        Services <img class="h-1rem w-1rem" src="chevron-down.svg">
+        Services <img class="h-1rem w-1rem" src="ds_down_arrow_black.svg">
       </a>
     </li>
-    <li class="nav-item mx-3">
-      <a class="nav-link px-3 pb-2" routerLink="/saas-offerings" routerLinkActive="active">SaaS Offerings</a>
+    <li class="nav-item mx-4">
+      <a class="nav-link px-3 pb-2 pl-4" routerLink="/saas-offerings" routerLinkActive="active">SaaS Offerings</a>
     </li>
-    <li class="nav-item mx-3">
-      <a class="nav-link px-3 pb-2" routerLink="/about_us" routerLinkActive="active">About Us</a>
+    <li class="nav-item mx-4">
+      <a class="nav-link px-3 pb-2 pl-4" routerLink="/about_us" routerLinkActive="active">About Us</a>
     </li>
-    <li class="nav-item mx-3">
-      <a class="nav-link px-3 pb-2" routerLink="/case_study" routerLinkActive="active">Case Studies</a>
+    <li class="nav-item mx-4">
+      <a class="nav-link px-3 pb-2 pl-4" routerLink="/case_study" routerLinkActive="active">Case Studies</a>
     </li>
-    <li class="nav-item mx-3">
-      <p-button class="mr-8"  label="Contact Us" routerLink="/contact_us" routerLinkActive="active" [rounded]="true" severity="secondary" />
+    <li class="nav-item mx-4 pl-0 lg:pl-5">
+      <p-button class="mr-8" label="Contact Us" routerLink="/contact_us" routerLinkActive="active" [rounded]="true" severity="secondary"></p-button>
     </li>
   </ul>
 </nav>
+
 
 <!-- /*/////////////////////////////////////////////////////*/ -->  
 
@@ -32,124 +38,84 @@
   <p-dialog
     [modal]="true"
     [(visible)]="visible"
-    [style]="{ width: '1152px', height: '340px' }"
-    
-  >
-  <ng-template pTemplate="headless">
-    <div class="grid">
-      <div  class="icon">
-        <img src="footer-front.svg" alt="datashaastra">
-        <p>Elevate Your Business<br>Operations with Our Cutting-<br>Edge Solutions</p>
-      </div>
-       
-      <div class="col-9">
-        <div class="icon-x">
-        <h1>Services</h1>
-          <a (click)="closeDialog()"><img src="tabler-icon-x.svg"></a>
+    [style]="{ width: '75vw'}">
+      <ng-template pTemplate="headless">
+      <div class="grid flex-column md:flex-row">
+        <div class=" lg:border-round-left-2xl  icon">
+          <img src="footer-front.svg" alt="datashaastra">
+          <p>Elevate Your Business<br>Operations with Our Cutting-<br>Edge Solutions</p>
+        </div>
         
-      </div>
-
-         <div class="grid">
-
-              <div class="col-4">
-                <a  routerLink="/Data-Transformation" routerLinkActive="active"  class="Services">Data Transformation<br></a>
-                <div class="mt-2">
+        <div class="col-9">
+          <div class="icon-x ">
+            <h1>Services</h1>
+            <a (click)="closeDialog()"><img src="tabler-icon-x.svg" class=" mt-3 lg:mt-2"></a>
+          </div>
+               
+          <div class="grid flex-column md:flex-row">
+            <div class="col-4 "> <!--w-21rem lg:w-16rem pl-4 lg:pl-2-->
+              <a routerLink="/Data-Transformation" routerLinkActive="active" class="Services" (click)="closeDialog()">Data Transformation<br></a>
+              <div class="mt-2">
                 <span class="text-sm text-color-secondary">Improve Your Data Quality To<br>Unlock Its True Potential<br></span>
                 <div class="mt-3">
-                <a class="Route" routerLink="/saas-offerings" routerLinkActive="active">Learn More</a>
+                  <a class="Route" routerLink="/saas-offerings" routerLinkActive="active" (click)="closeDialog()">Learn More</a>
+                </div>
               </div>
-              </div>
-              </div>
-              <div class="col-4">
-                <a  routerLink="/ML-Pipeline" routerLinkActive="active"  class="Services">ML Pipeline And Deployment<br></a>
-                <div class="mt-2">
-
+            </div>
+                  
+            <div class="col-4"> <!--w-21rem lg:w-16rem pl-4 lg:pl-0-->
+              <a routerLink="/ML-Pipeline" routerLinkActive="active" class="Services" (click)="closeDialog()">ML Pipeline And Deployment<br></a>
+              <div class="mt-2">
                 <span class="text-sm text-color-secondary">Seamless & Efficient Integration of ML Model with your System<br></span>
                 <div class="mt-3">
-
-                <a class="Route" routerLink="/saas-offerings" routerLinkActive="active">Learn More</a>
+                  <a class="Route" routerLink="/saas-offerings" routerLinkActive="active" (click)="closeDialog()">Learn More</a>
+                </div>
               </div>
             </div>
-              </div>
-
-              <div class="col-4">
-                <a  routerLink="/Business-Intelligent" routerLinkActive="active"  class="Services">Business Intelligent (BI) Dashboards<br></a>
-                <div class="mt-2">
+                  
+            <div class="col-4"> <!--w-21rem lg:w-19rem pl-4 lg:pl-0-->
+              <a routerLink="/Business-Intelligent" routerLinkActive="active" class="Services" (click)="closeDialog()">Business Intelligent (BI) Dashboards<br></a>
+              <div class="mt-2">
                 <span class="text-sm text-color-secondary">Intuitive & Insightful Dashboards for Strategic Decision Making<br></span>
                 <div class="mt-3">
-                <a  class="Route" routerLink="/saas-offerings" routerLinkActive="active">Learn More</a>
+                  <a class="Route" routerLink="/saas-offerings" routerLinkActive="active" (click)="closeDialog()">Learn More</a>
+                </div>
               </div>
             </div>
-              </div>
-              <div class="col-4">
-                <a  routerLink="/AI-ML-Based-Solution" routerLinkActive="active"  class="Services">AI-ML Based Solution Designing<br></a>
-                <div class="mt-2">
+                  
+            <div class="col-4">
+              <a routerLink="/AI-ML-Based-Solution" routerLinkActive="active" class="Services" (click)="closeDialog()">AI-ML Based Solution Designing<br></a>
+              <div class="mt-2">
                 <span class="text-sm text-color-secondary">Rapid Validation and Faster AI-ML Solutions to your Problem<br></span>
                 <div class="mt-3">
-                <a class="Route" routerLink="/saas-offerings" routerLinkActive="active">Learn More</a>
-                </div>
+                  <a class="Route" routerLink="/saas-offerings" routerLinkActive="active" (click)="closeDialog()">Learn More</a>
                 </div>
               </div>
-              <div class="col-4">
-                <a  routerLink="/Optimization" routerLinkActive="active"  class="Services">Optimization<br></a>
-                <div class="mt-2">
+            </div>
+
+            <div class="col-4">
+              <a routerLink="/Optimization" routerLinkActive="active" class="Services" (click)="closeDialog()">Optimization<br></a>
+              <div class="mt-2">
                 <span class="text-sm text-color-secondary">Efficiency with Cutting Edge<br>Optimization Models<br></span>
-                <div class="mt-3" >
-                <a class="Route" routerLink="/saas-offerings" routerLinkActive="active">Learn More</a>
-                </div>
+                <div class="mt-3">
+                  <a class="Route" routerLink="/saas-offerings" routerLinkActive="active" (click)="closeDialog()">Learn More</a>
                 </div>
               </div>
-              <div class="col-4">
-                <a  routerLink="/Business-Consulting" routerLinkActive="active"  class="Services">Business Consulting<br></a>
-                <div class="mt-2">
+            </div>
+
+            <div class="col-4">
+              <a routerLink="/Business-Consulting" routerLinkActive="active" class="Services" (click)="closeDialog()">Business Consulting<br></a>
+              <div class="mt-2">
                 <span class="text-sm text-color-secondary">Helping you Navigate your Analytics Journey with Expertise<br></span>
                 <div class="mt-3">
-                <a  class="Route" routerLink="/saas-offerings" routerLinkActive="active">Learn More</a>
-                </div>
+                  <a class="Route" routerLink="/saas-offerings" routerLinkActive="active" (click)="closeDialog()">Learn More</a>
                 </div>
               </div>
+            </div>
           </div>
-         <!-- <ul class="list-none p-0 m-0 grid gap-3 ">
-            <li class="col-4 gap-3">
-           
-            </li>
-            <li class="col-4 gap-3">
-              <a href="#" class="">ML Pipeline And Deployment</a>
-              <span class="text-sm text-color-secondary">Seamless & Efficient Integration of ML Model with your System</span>
-              <a href="#" class="">Learn More</a>
-  
-            </li>
-  
-            <li class="col-4 gap-3 ">
-              <a href="#" class="">Business Intelligent (BI) Dashboards</a>
-              <span class="text-sm text-color-secondary">Intuitive & Insightful Dashboards for Strategic Decision Making</span>
-              <a href="#" class="">Learn More</a>
-  
-            </li>
-          
-            <li class="col-4 gap-3">
-              <a href="#" class="">AI-ML Based Solution Designing</a>
-              <span class="text-sm text-color-secondary">Rapid Validation and Faster AI-ML Solutions to your Problem</span>
-              <a href="#" class="">Learn More</a>
-  
-            </li>
-            <li class="flex flex-column gap-3">
-              <a href="#" class="">Optimization</a>
-              <span class="text-sm text-color-secondary">Efficiency with Cutting Edge Optimization Models</span>
-              <a href="#" class="">Learn More</a>
-  
-            </li>
-            <li class="flex flex-column gap-3">
-              <a href="#" class="">Business Consulting</a>
-              <span class="text-sm text-color-secondary">Helping you Navigate your Analytics Journey with Expertise</span>
-              <a href="#" class="">Learn More</a>
-  
-            </li>
-          </ul>
-   -->
-        
+        </div>
       </div>
-  </div>
-</ng-template>
+    </ng-template>
   </p-dialog>
+
 </div>

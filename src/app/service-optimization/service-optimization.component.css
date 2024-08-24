@@ -79,7 +79,6 @@
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 8px;
-    text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
@@ -204,4 +203,10 @@
 
 .custom-card[_ngcontent-ng-c2028191465]{
     height: 360px;
+}
+
+@media only screen and (max-width : 400px) {
+    .carousel{
+        left: 2%;
+    }
 }

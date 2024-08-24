@@ -10,7 +10,7 @@
 
 .banner1{
     color: white;
-    padding-top: 385px;
+    padding-top: 455px;
     padding-left: 60px;
 }
 
@@ -51,22 +51,14 @@
 }
 .card {
   position: relative;
-  top:19rem;
+  top:16rem;
   left:4rem;
-  width: 70%;
+  width: 80%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
  
 }
 
-.p-tabview .p-tabview-panels {
-  background-image: url('/assets/Blue.jpg') !important;
-  padding: 0.875rem 1.125rem 1.125rem 1.125rem;
-  border: 0 none;
-  color: #334155;
-  border-bottom-right-radius: 6px;
-  border-bottom-left-radius: 6px;
-}
 
 .card a {
   display: block;
@@ -190,7 +182,7 @@ button {
 
 /* ///////////////////////////////////////////////////////////////////////////////////////// */
 
-.p-tabview .p-tabview-panels {
+/* .p-tabview .p-tabview-panels {
   background-image: url('/assets/Blue.jpg'); 
   width: 788px;
   height: 282px;
@@ -202,16 +194,26 @@ button {
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 6px;
   color: white;
-}
+} */
 .Optimus-space{
   margin-bottom: 15px;
 }
 
-.p-tabview .p-tabview-panels {
-  background-image: url('/assets/Blue.jpg') !important;
+::ng-deep .p-tabview .p-tabview-panels {
+  background-image: url('/assets/Blue.jpg') ;
   padding: 0.875rem 1.125rem 1.125rem 1.125rem;
   border: 0 none;
-  color: white !important;
+  color: white ;
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 6px;
 }
+
+
+/* ::ng-deep .p-tabview .p-tabview-nav li .p-tabview-nav-link {
+  background-color: transparent;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s, outline-color 0.2s;
+} */
+
+
+@media only screen and (max-width: 767px) { .banner { max-width: 100%; } }
+

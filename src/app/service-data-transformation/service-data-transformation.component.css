@@ -69,7 +69,6 @@
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 8px;
-    text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
@@ -218,4 +217,10 @@ height: 512px; */
     font-size: 14px;
     margin-left: px;
     color: #666;
+}
+
+@media only screen and (max-width : 400px) {
+    .carousel{
+        left: 2%;
+    }
 }

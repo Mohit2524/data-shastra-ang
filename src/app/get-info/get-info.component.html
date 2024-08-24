@@ -1,5 +1,5 @@
 
-<div class="container" style="background-image: url('Blue.jpg'); height: 290px; width: 1312px;">
+<div class=" mt-6 flex flex-row container" style="background-image: url('Blue.jpg'); background-repeat:no-repeat; background-size:cover; background-position:center;">
   <div class="main">
     <div class="left">
       <h1>Get to know more!</h1>
@@ -12,28 +12,24 @@
     </div>
   </div>
   <form class="right" style="background: transparent; border: none;">
-    <div class="name">
-      <form class="asy">
-        <mat-form-field   hideRequiredMarker type MatFormFieldAppearance='outer'>
+    <div class="name" style="margin-right: 300px;">
+        <mat-form-field floatLabel="auto" hideRequiredMarker appearance="outline">
           <mat-label>Your name</mat-label>
-          <input matInput required>
+          <input matInput placeholder="e.g John Deo"  name="name" required>
         </mat-form-field>
-        <mat-form-field class="spam" hideRequiredMarker>
+        <mat-form-field class="spam" hideRequiredMarker appearance="outline">
           <mat-label>Your phone number</mat-label>
-          <input matInput required>
+          <input matInput placeholder="e.g +91 12345 67890"  name="phoneNumber" required>
         </mat-form-field>
-      </form>
     </div>
-    <div class="name1">
-      <div id="psy" style="background: transparent;">
-        <mat-form-field floatLabel="auto" hideRequiredMarker>
+    <div class="name1" style="margin-right: 300px;">
+        <mat-form-field floatLabel="auto" hideRequiredMarker appearance="outline">
           <mat-label>Your email address</mat-label>
-          <input matInput required>
+          <input matInput placeholder="e.g yourname@email.com*"  name="email"  required>
         </mat-form-field>
-      </div>
-      <mat-form-field class="add" floatLabel="auto" hideRequiredMarker>
+      <mat-form-field class="spam" floatLabel="auto" hideRequiredMarker appearance="outline">
         <mat-label>Your Message</mat-label>
-        <input matInput required>
+        <input matInput placeholder="Your message*" name="message" required>
       </mat-form-field>
     </div>
     <form class="name2">

@@ -91,3 +91,22 @@
      border-radius: 24px;
 }
 
+section { margin-left: 45px; margin-right: 45px; }
+
+.main { margin-left: 45px; margin-right: 45px; }
+
+app-footer {margin-left: 0px; margin-right: 0px; }
+
+@media only screen and (max-width : 400px) {
+    iframe{
+        width: 285px;;
+        height: 320px;
+    }
+}
+
+@media only screen and (max-width : 777px) {
+    iframe{
+        width: 660px;;
+        height: 320px;
+    }
+}

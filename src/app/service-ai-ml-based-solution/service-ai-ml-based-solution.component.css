@@ -72,7 +72,6 @@
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 8px;
-    text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
@@ -96,7 +95,6 @@
     background-color: rgb(237, 234, 222);
     padding: 24px;
     border-radius: 15px;
-    text-align: center;
     width: 421px;
     height: 360px;
 
@@ -186,7 +184,7 @@
     top: 0;
     right: 0;
     bottom: 0;
-    left: 80%; 
+    left: 30%; 
     margin: auto;
     display: flex;
     align-items: center;

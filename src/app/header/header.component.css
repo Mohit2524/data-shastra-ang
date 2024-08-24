@@ -2,12 +2,108 @@
     color: blue;
 } 
 
+
+
 *{
     margin:start;
     padding: 0;
     text-decoration: none;
     color: blue;
 }*/
+
+
+
+nav {
+  background-color: green;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  margin-right: 20px;
+}
+
+ul li a {
+  
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+
+
+.checkbtn {
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .checkbtn {
+    display: block;
+    margin-right: 20px;
+  }
+
+  ul {
+    position: absolute;
+    top: 22px;
+    right: 10px;
+    background-color: white;
+    color: black;
+    width: auto;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    transition: all 0.3s;
+    border-radius: 8px;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  ul li {
+    margin: 10px 0;
+  }
+
+  ul li a {
+    color: black;
+    font-size: 16px;
+    width: 100%;
+    display: block;
+  }
+
+  ul li a:hover {
+    color: black;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+  }
+
+  #check:checked ~ ul {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
 
 
 /* .navbar-brand {
@@ -64,16 +160,16 @@ nav.fixed-top {
 }
 .icon{
   background: url('/assets/D&Blue.svg');
-  margin-top: 6px;
-  height: 342px;
-  width: 257px;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  margin-top: 7px;
 }
 
 .icon-x{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 10px;
 }
 
 .icon-x button{
