@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { CarouselModule } from 'primeng/carousel';
+import { GetInfoComponent } from '../get-info/get-info.component';
+import { FooterComponent } from '../footer/footer.component';
 
 @Component({
   selector: 'app-service-ml-pipeline',
   standalone: true,
-  imports: [CarouselModule],
+  imports: [CarouselModule,GetInfoComponent,FooterComponent],
   templateUrl: './service-ml-pipeline.component.html',
   styleUrl: './service-ml-pipeline.component.css'
 })

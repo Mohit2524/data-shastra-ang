@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { CarouselModule } from 'primeng/carousel';
-
+import { FooterComponent } from '../footer/footer.component';
+import { GetInfoComponent } from '../get-info/get-info.component';
 @Component({
   selector: 'app-service-business-consulting',
   standalone: true,
-  imports: [CarouselModule],
+  imports: [CarouselModule,FooterComponent,GetInfoComponent],
   templateUrl: './service-business-consulting.component.html',
   styleUrl: './service-business-consulting.component.css'
 })

@@ -51,9 +51,9 @@
 }
 .card {
   position: relative;
-  top:16rem;
+  top:14rem;
   left:4rem;
-  width: 80%;
+  width: 75%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
  
@@ -75,6 +75,7 @@
   font-size: 1.1rem;
   margin: 0;
   margin-bottom: 10px;
+  text-decoration: none;
   color: blue;
 }
 .card-text {
@@ -111,7 +112,7 @@
   border-radius: 10px;
   padding: 30px;
 
-}
+} 
 
 h1 {
   font-size: 24px;
@@ -215,5 +216,18 @@ button {
 } */
 
 
-@media only screen and (max-width: 767px) { .banner { max-width: 100%; } }
+
+/* @media only screen and (max-width : 375px) {
+  .space{
+     width: 5%;
+ }
+} */
+
+::ng-deep .p-tabview .p-tabview-nav li .p-tabview-nav-link{
+  border: none !important;
+}
+
+::ng-deep ::-webkit-scrollbar {
+  display: none;
+}
 

@@ -8,15 +8,15 @@
 <app-philosophy />
 
 
-<div class="w-68rem ">
+<div class="w-68rem">
   <div class="flex text-center mb-2 ml-4">
     <img src="D.svg" alt="Logo">
     <h2 class="ml-2">Services</h2>
   </div>
-  <div class="flex flex-column md:flex-row mt-4">
-  <div class="scroll-container">
+  <div class="flex flex-column lg:flex-row mt-4">
+  <div class="scroll-container space">
     <div class="flex flex-row flex-wrap p-4">
-      <div class="w-18rem border-round-xs shadow-2 h-20rem w-21rem">
+      <div class=" border-round-xs shadow-2 h-27rem sm:h-20rem w-9rem sm:w-21rem">
         <a routerLink="/Data-Transformation" routerLinkActive="active"><img src="Data Transformation.svg" class="border-round-top card-img-top" alt="Data Transformation"></a>
         <div class="card-body">
           <h6 class="card-title">Data Transformation</h6>
@@ -24,22 +24,21 @@
         </div>
       </div>
       
-      <div class="card" class="w-18rem border-round-xs shadow-2 h-20rem w-21rem ml-0 lg:ml-2">
+      <div  class=" border-round-xs shadow-2 h-27rem sm:h-20rem w-9rem sm:w-21rem ml-2 lg:ml-2">
         <a routerLink="/AI-ML-Based-Solution" routerLinkActive="active"><img src="AI-ML Based.svg" class="border-round-top card-img-top" alt="AI-ML Based Solution Designing"></a>
         <div class="card-body">
           <h6 class="card-title">AI-ML Based Solution Designing</h6>
           <p class="card-text">Prototype service delivering agility and precision, empowering strategic and informed AI and ML ventures.</p>
         </div>
-      </div>  
-            
-      <div class="card" class="w-18rem border-round-xs shadow-2 h-20rem w-21rem ml-0 lg:ml-2">
+      </div> 
+      <div class=" border-round-xs shadow-2 h-27rem sm:h-20rem w-9rem sm:w-21rem ml-0 lg:ml-2 mt-2 lg:mt-0">
         <a routerLink="/ML-Pipeline" routerLinkActive="active"><img src="ML Pipeline.svg" class="border-round-top card-img-top" alt="ML Pipeline and Deployment"></a>
         <div class="card-body">
           <h6 class="card-title">ML Pipeline and Deployment</h6>
           <p class="card-text">Services to transform proven prototypes into scalable, efficient systems for real-time insights and operational enhancements.</p>
         </div>
       </div>
-          <div class="card" class="w-18rem border-round-xs shadow-2 h-20rem w-21rem mt-0 lg:mt-2">
+          <div class=" border-round-xs shadow-2 h-27rem sm:h-20rem w-9rem sm:w-21rem mt-2 ml-2 lg:ml-0">
         <a routerLink="/Optimization" routerLinkActive="active"><img src="Optimization.svg" class="border-round-top card-img-top" alt="Optimization"></a>
         <div class="card-body">
           <h6 class="card-title">Optimization</h6>
@@ -47,7 +46,7 @@
         </div>
       </div>
 
-      <div class="card" class="w-18rem border-round-xs shadow-2 h-20rem w-21rem mt-0 lg:mt-2 ml-0 lg:ml-2">
+      <div class=" border-round-xs shadow-2 h-27rem sm:h-20rem w-9rem sm:w-21rem mt-2 ml-0 lg:ml-2">
         <a routerLink="/Business-Intelligent" routerLinkActive="active"><img src="Business Intelligence.svg" class="border-round-top card-img-top" alt="BI Dashboards"></a>
         <div class="card-body">
           <h6 class="card-title">BI Dashboards</h6>
@@ -55,7 +54,7 @@
         </div>
       </div>
 
-      <div class="card" class="w-18rem border-round-xs shadow-2 h-20rem w-21rem mt-0 lg:mt-2 ml-0 lg:ml-2">
+      <div class=" border-round-xs shadow-2 h-27rem sm:h-20rem w-9rem sm:w-21rem mt-2 ml-2">
         <a routerLink="/Business-Consulting" routerLinkActive="active"><img src="Business Consulting.svg" class="border-round-top card-img-top" alt="Business Consulting"></a>
         <div class="card-body">
           <h6 class="card-title">Business Consulting</h6>
@@ -65,7 +64,7 @@
     </div>
   </div>
 
-    <div class="m-3 container5">
+    <div class="m-3 container5"> 
       <h1>Get to know more!</h1>
       <p>For comprehensive information on our services, kindly provide your contact details, and our team will promptly get in touch with you.</p>
       <form>
@@ -81,6 +80,7 @@
           <button class="print-clean-b" type="submit">Submit</button>
       </form>
   </div>
+
 </div>
 </div>
 <router-outlet/>
@@ -91,73 +91,94 @@
 
  <div class="ml-4 sas-header">
   <img src="D.svg" alt="Logo">
-  <h2 class="ml-2	">Saas Offerings</h2>
+  <h2 class="ml-2">Saas Offerings</h2>
 </div>
 
-<div class="img w-78rem h-30rem bg-cover"
-   [ngStyle]="{
-     'background-image': 'url(' + images[selectedTabIndex] + ')',
-   }">
-<div class="card">
-  <p-tabView (onChange)="onTabChange($event)">
-    <p-tabPanel header="Auto Route Planning">
-      <div class="header">
-        <h1 class="mb-5">Auto Route Planning</h1>
-        <ul style="list-style: '-  ';">
-          <span class="Optimus-space"> Optimus - Predictive solution for optimal and efficient vehicle and
-          route planning.
-          </span>
-          <li class="mt-4 ml-3 mb-3">
-            Optimal routes for over 400 delivery locations in under a minute
-          </li>
-          <li class="ml-3 mb-3">Multiple configurations and a user-friendly interface</li>
-          <li class="ml-3 mb-3">
-            Smart AI & ML backed optimisation engine to see recommended routes
-          </li>
-          <li class="ml-3 mb-3">Savings up to 20%</li>
-        </ul>
-      </div>
-    </p-tabPanel>
+<div class="img w-78rem h-29rem sm:h-24rem bg-cover"
+     [ngStyle]="{
+       'background-image': 'url(' + images[selectedTabIndex] + ')'
+     }">
+  <div class="card">
+    <p-tabView (onChange)="onTabChange($event)">
+      <p-tabPanel header="Auto Route Planning">
+        <div class="header">
+          <h1 class="mb-5">Auto Route Planning</h1>
+          <ul style="list-style: '-  ';">
+            <span class="Optimus-space">
+              'Optimus' - Predictive solution for optimal and efficient vehicle and route planning.
+            </span>
+            <li class="mt-4 ml-3 mb-3">
+              Optimal routes for over 400 delivery locations in under a minute
+            </li>
+            <li class="ml-3 mb-3">Multiple configurations and a user-friendly interface</li>
+            <li class="ml-3 mb-3">
+              Smart AI & ML backed optimisation engine to see recommended routes
+            </li>
+            <li class="ml-3 mb-3">Savings up to 20%</li>
+          </ul>
+        </div>
+      </p-tabPanel>
 
-    <p-tabPanel header="Transport Management System">
-      <div class="header">
-        <h1 class="mb-5">Transport Management System</h1>
-        <ul style="list-style: '-  ';"> 
-          <span>Smart Trip - Total Transport Management System.</span>
-          <li class="mt-4 ml-3 mb-3">Assigning Vehicle to Trip and Real time monitoring the same</li>
-          <li class="ml-3 mb-3">Intuitive and Interactive Dashboard to avoid SLA breaches</li>
-          <li class="ml-3 mb-3">Delivery Partner App with on-the-go controls for efficient delivery</li>
-          <li class="ml-3 mb-3">Supervisor App for overseeing operations and vehicle tracking.</li>
-        </ul>
-      </div>
-    </p-tabPanel>
+      <p-tabPanel header="Transport Management System">
+        <div class="header">
+          <h1 class="mb-5">Transport Management System</h1>
+          <ul style="list-style: '-  ';">
+            <span>'Smart Trip' - Total Transport Management System.</span>
+            <li class="mt-4 ml-3 mb-3">
+              Assigning Vehicle to Trip and Real-time monitoring the same
+            </li>
+            <li class="ml-3 mb-3">
+              Intuitive and Interactive Dashboard to avoid SLA breaches
+            </li>
+            <li class="ml-3 mb-3">
+              Delivery Partner App with on-the-go controls for efficient delivery
+            </li>
+            <li class="ml-3 mb-3">
+              Supervisor App for overseeing operations and vehicle tracking.
+            </li>
+          </ul>
+        </div>
+      </p-tabPanel>
 
-    <p-tabPanel header="Contract Management & Accounting Tool">
-      <div class="header">
-        <h1 class="mb-5">Contract Management & Accounting Tool</h1>
-        <ul style="list-style: '-  ';"> 
-          <span>HiSaaB - Comprehensive Contract Management and Accounting tool</span>
-          <li class="mt-4 ml-3 mb-3"> Simplified contract approval workflows</li>
-          <li class="ml-3 mb-3">Enables easy billing and cost allocation based on contract terms</li>
-          <li class="ml-3 mb-3">Advanced cost analysis at unit transactional level by factoring all business parameters</li>
-        </ul>
-      </div>
-    </p-tabPanel>
+      <p-tabPanel header="Contract Management & Accounting Tool">
+        <div class="header">
+          <h1 class="mb-5">Contract Management & Accounting Tool</h1>
+          <ul style="list-style: '-  ';">
+            <span>'HiSaaB' - Comprehensive Contract Management and Accounting tool</span>
+            <li class="mt-4 ml-3 mb-3">
+              Simplified contract approval workflows
+            </li>
+            <li class="ml-3 mb-3">
+              Enables easy billing and cost allocation based on contract terms
+            </li>
+            <li class="ml-3 mb-3">
+              Advanced cost analysis at unit transactional level by factoring all business parameters
+            </li>
+          </ul>
+        </div>
+      </p-tabPanel>
 
-    <p-tabPanel header="Dashboarding, Reporting & Trip Analysis">
-      <div class="header">
-        <h1 class="mb-5">Dashboarding, Reporting & Trip Analysis</h1>
-        <ul style="list-style: '-  ';">
-          <span>Third Eye - AI-powered dashboards and Reports</span>
-          <li class="mt-4 ml-3 mb-3">Comprehensive trip analysis, including monthly trips, vehicle utilization.</li>
-          <li class="ml-3 mb-3">Reports for Delivery SLAs, user, and revenue analysis and analytics.</li>
-          <li class="ml-3 mb-3">Dashboard for CO2 emission savings.</li>
-        </ul>
-      </div>
-    </p-tabPanel>
-  </p-tabView>
+      <p-tabPanel header="Dashboarding, Reporting & Trip Analysis">
+        <div class="header">
+          <h1 class="mb-5">Dashboarding, Reporting & Trip Analysis</h1>
+          <ul style="list-style: '-  ';">
+            <span>'Third Eye' - AI-powered dashboards and Reports</span>
+            <li class="mt-4 ml-3 mb-3">
+              The AI-powered tool offers an intuitive and user-friendly interface for real-time data visualization and analysis.
+             </li>
+            <li class="ml-3 mb-3">
+              The platform integrates comprehensive operational and financial data, providing actionable insights and performance metrics.
+            </li>
+            <li class="ml-3 mb-3">
+              Advanced geospatial and temporal analysis capabilities allow users to track and visualize data trends across locations and time periods.
+            </li>
+          </ul>
+        </div>
+      </p-tabPanel>
+    </p-tabView>
+  </div>
 </div>
-</div>
+
 
 
  <!-- /*/////////////////////////////////////////////////////////////////////////////////////////////*/ -->
@@ -174,24 +195,28 @@
   [numVisible]="3" 
   [numScroll]="3" 
   [circular]="true" 
-  autoplayInterval="3000">
+  autoplayInterval="7000">
   <ng-template let-product pTemplate="item">
-      <div class="border-1 surface-border border-round m-2 p-3">
-          <div class="mb-3">
-              <div class="relative mx-auto">
-                  <img 
-                      [src]="product.image" 
-                      [alt]="product.name" 
-                      class="w-full border-round" />
+      <a [routerLink]="['/' + product.route]" routerLinkActive="active" class="no-underline">
+          <div class="border-1 surface-border border-round m-2 p-3 h-14rem lg:h-20rem">
+              <div class="mb-3">
+                  <div class="relative mx-auto">
+                      <img 
+                          [src]="product.image" 
+                          [alt]="product.name" 
+                          class="w-full border-round" />
+                  </div>
+              </div>
+              <div class="mb-3 font-medium">
+                  {{ product.name }}
               </div>
           </div>
-          <div class="mb-3 font-medium">
-              {{ product.name }}
-          </div>
-      </div>
+      </a>
   </ng-template>
-  </p-carousel>
-  
+</p-carousel>
+
+<router-outlet></router-outlet>
+
   <app-get-info/>
 <app-footer />
 

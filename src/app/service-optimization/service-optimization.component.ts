@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { CarouselModule } from 'primeng/carousel';
-
+import { GetInfoComponent } from '../get-info/get-info.component';
+import { FooterComponent } from '../footer/footer.component';
 @Component({
   selector: 'app-service-optimization',
   standalone: true,
-  imports: [CarouselModule],
+  imports: [CarouselModule,GetInfoComponent,FooterComponent],
   templateUrl: './service-optimization.component.html',
   styleUrl: './service-optimization.component.css'
 })

@@ -23,7 +23,7 @@
 <p-carousel 
   [value]="products" 
   [numVisible]="4" 
-  [numScroll]="5" 
+  [numScroll]="4" 
   [circular]="true" 
   autoplayInterval="3000">
   <ng-template let-product pTemplate="item">
@@ -42,14 +42,14 @@
 </div>
 
 
-<div class="container-Compheresive-data" class="w-90rem h-32rem surface-ground  mt-7">
+<div class="h-32rem surface-ground  mt-7 Comprehensive-add " style="height: 500px;">
         <h1 class="text-4xl text-primary text-center pt-7">
             AI-ML Solution Designing
         </h1>
-        <div class="flex-Compheresive-data" class="flex flex-column md:flex-row justify-content-between">
-            <div class="image-Compheresive-data" class="w-40rem h-15rem bg-white mt-6 pt-2	pl-4">
+        <div class="flex flex-column md:flex-row justify-content-between ml-0 sm:ml-6  mr-0 :mr-6 ">
+            <div class=" h-13rem bg-white mt-6 pt-2	pl-4" style="width: 650px;">
             <img class="h-2.5rem w-2.5rem" src="tabler-icon-search.svg" alt="rotate">
-            <ul class="Lists-Compheresive-data" class="text-color mt-3 " style="    list-style-type: '-';">
+            <ul  class="text-color mt-3 " style="    list-style-type: '-';">
                 <span class="list-title" class="text-2xl text-primary line-height-2">Collate And Analyse Data</span>
 
                 <li class="pt-2	text-base ml-3">Articulate business challenges where AI and ML can have significant impact.</li>
@@ -57,9 +57,9 @@
                 <li class="pt-2	text-base ml-3">Uncover insights and identifying additional data needs</li>
             </ul>
         </div>
-        <div class="image-Compheresive-data" class="w-30rem h-15rem bg-white mt-6 pt-2 ">
+        <div class="h-13rem bg-white mt-6 pt-2 pl-4" style="width: 650px;">
             <img class="h-2.5rem w-2.5rem" src="tabler-icon-device-analytics.svg" alt="rotate">
-            <ul class="Lists-Compheresive-data" class="text-color mt-3 " style="    list-style-type: '-';">
+            <ul class="text-color mt-3 " style="    list-style-type: '-';">
                 <span class="list-title" class="text-2xl text-primary line-height-2">Prototyping, Training, Testing & Tuning</span>
 
                 <li class="pt-2	text-base ml-3">Craft tailored AI-ML prototypes</li>
@@ -72,3 +72,5 @@
     
 </div>
 
+<app-get-info />
+<app-footer />

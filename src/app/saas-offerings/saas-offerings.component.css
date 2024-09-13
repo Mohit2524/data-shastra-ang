@@ -1,11 +1,7 @@
 *{
   margin: 0;
   padding: 0;
-  padding-bottom: 42px;
 }
-
-
-
 
 /* #img{
   max-width:100%;
@@ -44,9 +40,9 @@ li{
 h1{
   margin-top: 40px;
 }
-#start{
+/* #start{
   padding-left: 30px;
-}
+} */
 
 
 .tab{
@@ -93,19 +89,18 @@ h1{
   background-color: #f5f5f5;
   padding: 10px;
   border-radius: 5px;
-  margin-bottom: 20px;
 }
 .Route > li::before {
   content: url('/assets/D.svg'); 
   margin-right: 10px;
 }
-.header {
+/* .header {
   display: flex;
   flex-direction: row;
   width: 1440px;
   height: 552px;
   background-color: #F6F6F6;
-}
+} */
 .header #first {
   margin-left: 64px;
 }
@@ -115,5 +110,37 @@ h1{
   margin-left: 45px;
 }
 
-.saas-container { margin-left: 45px; margin-right: 45px; margin-top: 65px; }
+/* .saas-container { margin-left: 45px; margin-right: 45px;} */
 
+
+::ng-deep .p-tabview .p-tabview-nav li .p-tabview-nav-link{
+  border: none !important;
+
+}
+
+/* @media only screen and (max-width:375px){
+  ::ng-deep .Route li{
+    width: 15px !important;
+  }
+} */
+
+
+/* @media only screen and (max-width: 400px){
+  ::ng-deep #first ul{
+  line-height: 1px;
+  font-size: 15px;
+    
+  }
+} */
+
+/* @media only screen and (max-width: 1536px){
+  .split{
+    border-top-right-radius:  none;
+  }
+} */
+
+::ng-deep .p-tabview .p-tabview-panels {
+
+  background-image: none;
+
+}

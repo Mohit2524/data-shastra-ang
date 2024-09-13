@@ -1,6 +1,7 @@
 <div class="container">
   <app-header/>
-  <router-outlet />
-  
+  <main>
+  <router-outlet (activate)="onActivate($event)" />
+</main>
 
 </div>

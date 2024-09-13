@@ -169,7 +169,7 @@ nav.fixed-top {
 .icon-x{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content:space-between;
 }
 
 .icon-x button{
@@ -226,3 +226,82 @@ nav.fixed-top {
     width: 25rem;
   } */
   
+  
+  .scrollable-container {
+    max-height: 700px;  
+    overflow-y: auto;      
+    overflow-x: hidden; 
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media only screen and (max-width : 768px) {
+   .icon-x a{
+      right: 5;
+  }
+}
+
+@media only screen and (max-width : 768px) {
+.bottom {
+      border-bottom: 2px solid #E5E4E2;
+      padding-left: 15px;
+    }
+}
+
+
+@media only screen and (max-width : 768px) {
+   ::ng-deep .p-dialog{
+     width: 87vw !important;
+ }
+}
+
+::ng-deep .p-dialog {
+    border: none;
+    box-shadow: none;
+    border-radius: none;
+}
+
+.icon-x img{
+  margin-left: 490px;
+}
+
+@media only screen and (max-width: 375px) {
+  .icon-x img{
+    margin-left: 10px !important;
+  }
+}
+
+
+@media only screen and (max-width: 375px) {
+  .navbar-brand img{
+    width: 25px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .checkbtn[_ngcontent-ng-c3342937195] {
+      display: block;
+      margin-right: 0px;
+  }
+}
+
+@media only screen and (max-width:768px){
+  ::ng-deep .split{
+    margin-top: 5px !important;
+    margin-left: 495px!important;
+  }
+}
+
+@media only screen and (max-width:768px){
+  ::ng-deep .icon img{
+    width: 100%;
+  }
+}
+
+/* @media only screen and (max-width:400px){
+  ::ng-deep .icon-x {
+    margin-left: 5px !important;
+  }
+} */

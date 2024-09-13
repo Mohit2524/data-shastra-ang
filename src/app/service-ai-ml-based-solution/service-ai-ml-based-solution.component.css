@@ -4,7 +4,7 @@
 }
 
 .container{
-   
+  
     color: white;
 }
 
@@ -16,7 +16,7 @@
 
 
 .start h6{
-    font-size: 45px;
+    font-size: 35px;
     margin-left: 64px;
 }
 .start p{
@@ -28,13 +28,13 @@
     font-size: 32px;
     color: blue;
     margin-top: 80px;
-    margin-left: 349px;
+    margin-left: 309px;
 } */
 
 /* .Expertise p{
     font-size: 17px;
     padding-top: 15px;
-    margin-left: 160px;
+    margin-left: 200px;
     color: black;
     line-height: 1;
 } */
@@ -50,7 +50,11 @@
     
 }
 
-
+#img{
+    width: 533px;
+    height: 520px;
+    margin-left: 0px;
+}
 
 .Data-Quality{
     width: 421px;
@@ -95,13 +99,20 @@
     background-color: rgb(237, 234, 222);
     padding: 24px;
     border-radius: 15px;
+    text-align: center;
     width: 421px;
     height: 360px;
 
 }
 
+@media only screen and (max-width:768px){
+    .sum{
+        height: 600px !important;
+    }
+}
 
-.container-Compheresive-data{
+
+/* .container-Compheresive-data{
     width:1440px;
     height: 512px;
     background-color: rgb(240,255,240);
@@ -117,8 +128,8 @@
 
 
 .image-Compheresive-data{
-    width: 700px;
-    height: 290px;
+    width: 690px;
+    height: 230px;
     background-color: white;
     margin-top: 40px;
     padding-top: 24px;
@@ -135,7 +146,7 @@
     color: black;
     margin-top: 16px;
 
-}
+} */
 
 .list-title{
     font-size: 24px;
@@ -154,11 +165,6 @@
     flex-direction: row;
     justify-content: space-between;
 }
-
-
-
-
-
 
 
 .container1 {
@@ -184,51 +190,37 @@
     top: 0;
     right: 0;
     bottom: 0;
-    left: 30%; 
+    left: 80%; 
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.custom-card[_ngcontent-ng-c3054480573] {
-    height: 360px;
+@media only screen and (max-width : 400px) {
+    .carousel{
+        left: 5%;
+    }
+}
+@media only screen and (max-width : 768px) {
+    .carousel{
+        left: 9%;
+    }
 }
 
-.card-icon {
-    width: 40px; /* Adjust size as needed */
-    height: auto;
-    margin-bottom: 15px;
-}
 
-.card-content {
-    position: relative;
-    z-index: 10;
+::ng-deep .custom-card[_ngcontent-ng-c1663796791]{
+    height: 350px;
+    margin-right: 15px;
 }
 
 .card-title {
     font-size: 18px;
     color: blue;
-    margin-right: 115px;
     padding-bottom: 10px;
 }
-
-.card-text {
-    font-size: 14px;
-    margin-left: px;
-    color: #666;
-}
-
-.card-img-top[_ngcontent-ng-c2425885287] {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 20px;
-    margin-right: 455px;
-}
-
-.card-title[_ngcontent-ng-c2425885287] {
-    font-size: 18px;
-    color: blue;
-    margin-right: 6px;
-    padding-bottom: 10px;
+@media only screen and (max-width: 768px) {
+    ::ng-deep .Comprehensive-add {
+        height: 650px !important;
+    }
 }

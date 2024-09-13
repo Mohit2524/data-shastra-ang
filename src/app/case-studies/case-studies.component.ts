@@ -15,5 +15,5 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './case-studies.component.css'
 })
 export class CaseStudiesComponent {
-  
+
 }

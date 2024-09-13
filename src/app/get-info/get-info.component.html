@@ -1,5 +1,5 @@
 
-<div class=" mt-6 flex flex-row container" style="background-image: url('Blue.jpg'); background-repeat:no-repeat; background-size:cover; background-position:center;">
+<div class=" mt-6 flex flex-column md:flex-row container" style="background-image: url('Blue.jpg'); background-repeat:no-repeat; background-size:cover; background-position:center;">
   <div class="main">
     <div class="left">
       <h1>Get to know more!</h1>
@@ -11,29 +11,30 @@
       <p class="pb-6">Reach out to us at - <a href="infodatashastra.io">infodatashastra.io <img src="copy.png"></a></p>
     </div>
   </div>
-  <form class="right" style="background: transparent; border: none;">
-    <div class="name" style="margin-right: 300px;">
-        <mat-form-field floatLabel="auto" hideRequiredMarker appearance="outline">
-          <mat-label>Your name</mat-label>
-          <input matInput placeholder="e.g John Deo"  name="name" required>
-        </mat-form-field>
-        <mat-form-field class="spam" hideRequiredMarker appearance="outline">
-          <mat-label>Your phone number</mat-label>
-          <input matInput placeholder="e.g +91 12345 67890"  name="phoneNumber" required>
-        </mat-form-field>
-    </div>
-    <div class="name1" style="margin-right: 300px;">
-        <mat-form-field floatLabel="auto" hideRequiredMarker appearance="outline">
-          <mat-label>Your email address</mat-label>
-          <input matInput placeholder="e.g yourname@email.com*"  name="email"  required>
-        </mat-form-field>
-      <mat-form-field class="spam" floatLabel="auto" hideRequiredMarker appearance="outline">
-        <mat-label>Your Message</mat-label>
-        <input matInput placeholder="Your message*" name="message" required>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()" class="right" style="background: transparent; border: none;">
+    <div class="flex-column md:flex-row name">
+      <mat-form-field floatLabel="auto" hideRequiredMarker appearance="outline">
+        <mat-label>Your name</mat-label>
+        <input matInput formControlName="name" placeholder="e.g John Deo" required>
+      </mat-form-field>
+      <mat-form-field  class="spam" style="margin-left: 85px;" floatLabel="auto" float hideRequiredMarker appearance="outline">
+        <mat-label>Your phone number</mat-label>
+        <input matInput formControlName="phoneNumber" placeholder="e.g +91 12345 67890" required>
       </mat-form-field>
     </div>
-    <form class="name2">
-      <button mat-button style="color: white;">Submit</button>
-    </form>
+    <div class="flex-column md:flex-row name1">
+      <mat-form-field floatLabel="auto" hideRequiredMarker appearance="outline">
+        <mat-label>Your email address</mat-label>
+        <input matInput formControlName="email" placeholder="e.g yourname@email.com*" required>
+      </mat-form-field>
+      <mat-form-field class="spam" style="margin-left: 85px;" floatLabel="auto" hideRequiredMarker appearance="outline">
+        <mat-label >Your Message</mat-label>
+        <input matInput formControlName="message" placeholder="Your message*" required>
+      </mat-form-field>
+    </div>
+    <div class="name2">
+      <button mat-button type="submit" style="color: white;">Submit</button>
+    </div>
   </form>
+  
 </div>

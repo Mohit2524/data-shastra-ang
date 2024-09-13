@@ -30,25 +30,33 @@ export class DashboardComponent {
   products = [
     {
         image: 'Data-driven Engagement.svg',
-        name: 'Data-Driven Engagement & Retention Success'
+        name: 'Data-Driven Engagement & Retention Success',
+        route: 'Data-driven Engagement'
     },
     {
         image: 'Route-Optimization.svg',
-        name: 'Route Optimization - Optimus'
+        name: 'Route Optimization - Optimus',
+        route: 'Route-Optimization'
     },
     {
         image: 'Disha.svg',
-        name: 'DISHA: Light-Weight In-House Routing Solution'
+        name: 'DISHA: Light-Weight In-House Routing Solution',
+        route: 'Disha'
     },
     {
         image: 'Vehicle-Performance.svg',
-        name: 'Vehicle Performance/OTD Dashboard'
+        name: 'Vehicle Performance/OTD Dashboard',
+        route: 'Vehicle-Performance'
     },
     {
         image: 'Transportation-Spend.svg',
-        name: 'Transportation Spend Analytics - Order/Cost/Trip Level Cost Analysis'
+        name: 'Transportation Spend Analytics - Order/Cost/Trip Level Cost Analysis',
+        route: 'Transportation-Spend'
     }
- ];
+  ];
+  
+
+
 
  selectedTabIndex: number = 0;
 
@@ -63,6 +71,7 @@ export class DashboardComponent {
     this.selectedTabIndex = event.index;
   }
 
-
+   
+  
 
 }

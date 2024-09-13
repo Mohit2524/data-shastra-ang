@@ -191,9 +191,7 @@ height: 512px; */
     justify-content: center;
 }
 
-.custom-card[_ngcontent-ng-c3930422434]{
-    height: 460px;
-}
+
 .card-icon {
     width: 40px; 
     height: auto;
@@ -221,6 +219,44 @@ height: 512px; */
 
 @media only screen and (max-width : 400px) {
     .carousel{
-        left: 2%;
+        left: 5%;
+    }
+}
+@media only screen and (max-width : 768px) {
+    .carousel{
+        left: 9%;
+    }
+}
+
+
+
+::ng-deep .custom-card[_ngcontent-ng-c297702558]{
+     height: 355px !important;
+     margin-right: 15px;
+}
+
+.card-title {
+    font-size: 18px;
+    color: blue;
+    padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    ::ng-deep .Comprehensive-add {
+        height: 1300px !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    ::ng-deep .sum {
+        width: 600px !important;
+        height: 230px !important;
+        margin-left: 65px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    ::ng-deep .sum {
+        margin-left: 0px !important;
     }
 }

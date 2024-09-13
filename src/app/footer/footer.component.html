@@ -1,9 +1,9 @@
 <div class="footer-container">
     <img src="footer-front.svg" style="height: 28.44px; width: 248px;">
 
-    <div class="foot">
+    <div class="flex flex-column md:flex-row foot">
         <div class="footer-column">
-            <div id="img" style="margin: 12px;">
+            <div id="img" class="m-0">
                 <ul class="footer-list">
                     <li>Data Transformation</li>
                     <li>AI-ML Based Solution Designing</li>
@@ -31,14 +31,18 @@
         <div class="footer-column">
             <h2>Phone</h2>
             <p style="color: gray;">+91 77386 27566</p>
-            <a href="#"><img src="linkedin.png" style="height: 18px; width: 18px;" alt="LinkedIn"></a>
+            <a href="https://www.linkedin.com/company/datashastra-io/" target="_blank"><img src="linkedin.png" class="h-1rem w-1rem" alt="LinkedIn"></a>
         </div>
     </div>
-    <div class="footer-bottom">
-        <a href="#">Privacy Policy</a>
+    <div class="flex flex-column md:flex-row text-base footer-bottom">
+        <a routerLink="/Privacy-Policy" routerLinkActive="active">Privacy Policy</a>
         <div id="bottom">
-            <a href="#">T&C</a>
+            <a routerLink="/Terms-condition" routerLinkActive="active" class="ml-0 lg:ml-3">T&C</a>
+
         </div>
         <p style="color: gray;">DataShastra © 2024. All rights reserved</p>
     </div>
 </div>
+
+<router-outlet/>
+

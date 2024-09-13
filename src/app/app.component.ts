@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import {  RouterOutlet } from '@angular/router';
 import { PhilosophyComponent } from "./philosophy/philosophy.component";
 import { HeaderComponent } from "./header/header.component";
@@ -9,14 +9,30 @@ import { CommonModule } from '@angular/common';
 import {MatInputModule} from '@angular/material/input';
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { CasestudyDataDrivenComponent } from './casestudy-data-driven/casestudy-data-driven.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, PhilosophyComponent, HeaderComponent, TeckStackComponent, CaseStudiesComponent,DashboardComponent, CommonModule,MatInputModule,MatFormFieldModule,CasestudyDataDrivenComponent],
+  imports: [RouterOutlet, PhilosophyComponent, HeaderComponent, TeckStackComponent, CaseStudiesComponent,DashboardComponent, CommonModule,MatInputModule,MatFormFieldModule,CasestudyDataDrivenComponent,ReactiveFormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = 'dataShastra.io';
+     
+  onActivate(event: Event) {
+    document.body.scrollTop = 0;
+ 
+  }
+
+  constructor(private router: Router) {}
+
+  ngOnInit(): void {
+    this.router.navigate(['dashboard']); 
+  }
+ 
 }

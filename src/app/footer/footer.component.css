@@ -33,9 +33,9 @@ footer {
     margin-top: 60px;
 }
 
-.footer-column a{
+/* .footer-column a{
     padding-bottom: 85px;
-}
+} */
 
 
 .footer-column {
@@ -66,7 +66,6 @@ footer {
 .footer-bottom {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     border-top: 1px solid #555;
     padding: 10px 20px;
     font-size: 0.8em;

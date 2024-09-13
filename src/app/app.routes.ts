@@ -1,4 +1,4 @@
-import {  Routes } from '@angular/router';
+import { Routes } from '@angular/router';
 import { ServicesComponent } from './services/services.component';
 import { SaasOfferingsComponent } from './saas-offerings/saas-offerings.component';
 import { AboutUsComponent } from './about-us/about-us.component';
@@ -16,6 +16,8 @@ import { ServiceBusinessIntelligentComponent } from './service-business-intellig
 import { ServiceAIMLBasedSolutionComponent } from './service-ai-ml-based-solution/service-ai-ml-based-solution.component';
 import { ServiceOptimizationComponent } from './service-optimization/service-optimization.component';
 import { ServiceBusinessConsultingComponent } from './service-business-consulting/service-business-consulting.component';
+import { PolicyComponent } from './footer/policy/policy.component';
+import { TermsConditionComponent } from './footer/terms-condition/terms-condition.component';
  export const routes: Routes = [
   {
     path: '',
@@ -42,6 +44,8 @@ import { ServiceBusinessConsultingComponent } from './service-business-consultin
   {path: 'AI-ML-Based-Solution', component: ServiceAIMLBasedSolutionComponent},
   {path: 'Optimization', component: ServiceOptimizationComponent},
   {path:'Business-Consulting', component: ServiceBusinessConsultingComponent},
-
-  
+  {path: 'Privacy-Policy', component: PolicyComponent},
+  {path: 'Terms-condition', component:TermsConditionComponent}
 ];
+
+

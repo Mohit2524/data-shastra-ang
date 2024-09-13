@@ -1,21 +1,21 @@
-<div class="saas-container">
+<div class="saas-container ml-6 mr-6 pb-6">
   <div class="flex flex-column md:flex-row">
-    <div id="img" class="w-full h-full pl-3">
-      <img src="saas_offering.png" style="border: 0;">
+    <div id="img" class="w-full h-full pl-0 lg:pl-3 mt-0 lg:mt-7">
+      <img src="saas_offering.png" class=" border-round-top-2xl xl:border-round-left-2xl " style="border: 0; width: 100%; height: auto;">
     </div>
 
-    <div class="sas" class="h-30rem w-10 text-white pr-8" style="background-image: url(Blue.jpg); ">
-      <div id="start" class="pl-5">
-      <h1 class="text-6xl">Our SaaS Offerings</h1>
+    <div class="sas" class="text-white pr-8 mt-0 lg:mt-7 border-round-bottom-2xl xl:border-round-right-2xl" style="background-image: url(Blue.jpg); background-position: center;background-repeat: no-repeat;background-attachment: fixed;background-size: cover;">
+      <div id="start">
+      <h1 class=" text-2xl lg:text-6xl pb-6 w-14rem lg:w-30rem pl-3 lg:pl-5">Our SaaS Offerings</h1>
 
-      <p>Discover the future of business efficiency with our comprehensive suite<br>of Software as a Service (SaaS) solutions, designed to cater to<br> businesses of all sizes.</p>
+      <p class="pb-6 w-31rem text-base pl-5">Discover the future of business efficiency with our comprehensive suite of Software as a Service (SaaS) solutions, designed to cater to businesses of all sizes.</p>
                        
-      <ul class="text-base line-height-1" style="list-style-type: '◆';">
-        <span>Our offerings help to –</span>
-        <li>Streamline operations</li>
-        <li>Enhance productivity</li>
-        <li>Foster collaboration</li>
-        <li>Achieve goals with ease and innovation</li>
+      <ul class="text-base line-height-1 pl-5" style="list-style-type: '– ';">
+        <span class="w-25rem" >Our offerings help to –</span>
+        <li class="pt-6 ">Streamline operations</li>
+        <li class="pt-3 ">Enhance productivity</li>
+        <li class="pt-3 ">Foster collaboration</li>
+        <li class="pt-3 pb-4">Achieve goals with ease and innovation</li>
       </ul>
     </div>
 
@@ -25,64 +25,67 @@
 </div>
 
 
-<p-tabView class="mt-5">
+<p-tabView>
   <p-tabPanel header="Auto Route Planning">
-      <div class="header" class="flex flex-column md:flex-row w-90rem surface-ground">
-          <div id="first" class="ml-0 lg:ml-7 ">
-              <ul class="Route">Optimus: Auto Route Planning
+      <div class="flex flex-column-reverse md:flex-row w-90rem surface-ground">
+          <div class="ml-0 lg:ml-7 add">
+              <ul class="Route">
+                  <span class="text-blue-700 text-3xl ml-0 sm:ml-4">Optimus: Auto Route Planning</span>
                   <li class="w-50rem h-4rem text-sm line-height-1 m-3 bg-white text-bluegray-800 list-none pl-0 lg:pl-3 flex align-items-center bg-white p-2 border-round-md mb-4 p-3">Predictive solution for optimal vehicle and route planning, analyzing demand data to determine vehicle needs and create efficient delivery routes.</li>
                   <li class="w-50rem h-4rem text-sm line-height-1 m-3 bg-white text-bluegray-800 list-none pl-0 lg:pl-3 flex align-items-center bg-white p-2 border-round-md mb-4 p-3">Plans routes for ~400+ delivery locations within a minute, saving an hour compared to manual planning.</li>
                   <li class="w-50rem h-4rem text-sm line-height-1 m-3 bg-white text-bluegray-800 list-none pl-0 lg:pl-3 flex align-items-center bg-white p-2 border-round-md mb-4 p-3">Multiple configurations, including bulk weight and network effect, along with the option to input available vehicle types and numbers.</li>
-                  <li class="w-50rem h-4rem text-sm line-height-1 m-3 bg-white text-bluegray-800 list-none pl-0 lg:pl-3 flex align-items-center bg-white p-2 border-round-md mb-4 p-3">User-friendly UI/UX to modify proposed routes based on the actual situation on the ground.</li>
+                  <li class="w-50rem h-4rem text-sm l2`ine-height-1 m-3 bg-white text-bluegray-800 list-none pl-0 lg:pl-3 flex align-items-center bg-white p-2 border-round-md mb-4 p-3">User-friendly UI/UX to modify proposed routes based on the actual situation on the ground.</li>
               </ul>
           </div>
-          <div class="img" class="lg:ml-6" style="max-width: 100%; display: block; height: auto;" >
+          <div  class="lg:ml-6 flex1" style="max-width: 100%; display: block; height: auto;" >
               <img src="sone.png" alt="Image 1" >
           </div>
       </div>
   </p-tabPanel>
-  <p-tabPanel header="Transport Management System" >
-      <div class="header" class="flex flex-column md:flex-row w-90rem surface-ground">
-          <div id="first" class="ml-0 lg:ml-7 ">
-              <ul class="Route">Smart Trip - Total Transport Management System
-                  <li>Vendor, Vehicle and Driver Onboarding: Supports seamless onboarding with validation using government APIs for GSTIN, banking, PAN, AADHAR, vehicle registration, and license details.</li>
-                  <li>Trip Assignment and Tracking: Assign trips to vehicles and track them in real-time from start to final closure, including order delivery, proof of delivery, and COD collection.</li>
-                  <li>Driver App: Designed for drivers, this tool ensures seamless deliveries with automated warehouse checks, route sequencing, material verification, real-time updates, and post-delivery processing.</li>
-                  <li>Supervisor App: A command center for supervisors to manage delivery operations, including vehicle availability, trip assignment, real-time tracking, driver communication, and vendor registration.</li>
+  <p-tabPanel header="Transport Management System">
+      <div class="flex flex-column-reverse md:flex-row w-90rem surface-ground">
+          <div class="ml-0 lg:ml-7 add">
+              <ul class="Route">
+                <span class="text-blue-700 text-3xl ml-0 sm:ml-4">Smart Trip - Total Transport Management System</span>
+                  <li class="w-50rem  text-sm line-height-1 m-3 bg-white text-bluegray-800 list-none pl-0 lg:pl-3 flex align-items-center bg-white p-2 border-round-md mb-4 p-3">Vendor, Vehicle and Driver Onboarding: Supports seamless onboarding with validation using government APIs for GSTIN, banking, PAN, AADHAR, vehicle registration, and license details.</li>
+                  <li class="w-50rem text-sm line-height-1 m-3 bg-white text-bluegray-800 list-none pl-0 lg:pl-3 flex align-items-center bg-white p-2 border-round-md mb-4 p-3">Trip Assignment and Tracking: Assign trips to vehicles and track them in real-time from start to final closure, including order delivery, proof of delivery, and COD collection.</li>
+                  <li class="w-50rem  text-sm line-height-1 m-3 bg-white text-bluegray-800 list-none pl-0 lg:pl-3 flex align-items-center bg-white p-2 border-round-md mb-4 p-3">Driver App: Designed for drivers, this tool ensures seamless deliveries with automated warehouse checks, route sequencing, material verification, real-time updates, and post-delivery processing.</li>
+                  <li class="w-50rem text-sm line-height-1 m-3 bg-white text-bluegray-800 list-none pl-0 lg:pl-3 flex align-items-center bg-white p-2 border-round-md mb-4 p-3">Supervisor App: A command center for supervisors to manage delivery operations, including vehicle availability, trip assignment, real-time tracking, driver communication, and vendor registration.</li>
               </ul>
           </div>
-          <div class="img" class=" ml-6" style="height: 50%; width: 100%; border: 0;">
+          <div class=" lg:ml-6 flex1" style="max-width: 100%; display: block; height: auto;">
               <img src="stwo.png" alt="Image 2">
           </div>
       </div>
   </p-tabPanel>
   <p-tabPanel header="Contract Management & Accounting Tool" >
-      <div class="header" class="flex flex-column md:flex-row w-90rem surface-ground">
-          <div id="first" class="ml-0 lg:ml-7">
+      <div class="flex flex-column-reverse md:flex-row w-90rem surface-ground">
+          <div class="ml-0 lg:ml-7 add">
               <ul class="Route">
-                HiSaaB - Contract Management & Accounting Tool
-                  <li>A comprehensive commercial and contract management tool for teams handling e-contracts across transport facilities within companies.</li>
-                  <li>Vendor Commercial Management: HiSaaB streamlines vendor contract management with easy oversight across projects, tracking based on various parameters, and comparison to master contracts.</li>
-                  <li>Approval of Contracts based on User Management: HiSaaB enhances contract approval security and accountability by restricting access to authorized personnel and streamlining authentication processes.</li>
-                  <li>Billing and Cost Allocation: HiSaaB streamlines invoicing processes and offers advanced cost analysis tools for comprehensive trip expense evaluation and optimization of cost allocation strategies.</li>
+                 <span class="text-blue-700 text-3xl ml-0 sm:ml-4">HiSaaB - Contract Management & Accounting Tool</span> 
+                  <li class="w-50rem  text-sm line-height-1 m-3 bg-white text-bluegray-800 list-none pl-0 lg:pl-3 flex align-items-center bg-white p-2 border-round-md mb-4 p-3">A comprehensive commercial and contract management tool for teams handling e-contracts across transport facilities within companies.</li>
+                  <li class="w-50rem  text-sm line-height-1 m-3 bg-white text-bluegray-800 list-none pl-0 lg:pl-3 flex align-items-center bg-white p-2 border-round-md mb-4 p-3">Vendor Commercial Management: HiSaaB streamlines vendor contract management with easy oversight across projects, tracking based on various parameters, and comparison to master contracts.</li>
+                  <li class="w-50rem  text-sm line-height-1 m-3 bg-white text-bluegray-800 list-none pl-0 lg:pl-3 flex align-items-center bg-white p-2 border-round-md mb-4 p-3">Approval of Contracts based on User Management: HiSaaB enhances contract approval security and accountability by restricting access to authorized personnel and streamlining authentication processes.</li>
+                  <li class="w-50rem  text-sm line-height-1 m-3 bg-white text-bluegray-800 list-none pl-0 lg:pl-3 flex align-items-center bg-white p-2 border-round-md mb-4 p-3">Billing and Cost Allocation: HiSaaB streamlines invoicing processes and offers advanced cost analysis tools for comprehensive trip expense evaluation and optimization of cost allocation strategies.</li>
               </ul>
           </div>
-          <div class="img" class=" ml-6" style="height: 50%; width: 100%; border: 0;">
+          <div class=" lg:ml-6" style="max-width: 100%; display: block; height: auto;">
               <img src="sthree.png" alt="Image 3">
           </div>
       </div>
   </p-tabPanel>
   <p-tabPanel header="Dashboarding, Reporting & Trip Analysis" >
-      <div class="header" class="flex flex-column md:flex-row w-90rem surface-ground">
-          <div id="first" class="ml-0 lg:ml-7 ">
-              <ul class="Route">Third Eye : Dashboarding, Reporting & Trip Analysis
-                  <li>Empowers you with comprehensive analysis and analytics dashboards and reports by harnessing the capabilities of artificial intelligence and machine learning.</li>
-                  <li>Dashboards provide insights on monthly trips, vehicle utilization, on-time delivery, order and revenue analysis, and CO2 emission savings.</li>
-                  <li>Control Tower reports for data integrity and tech performance.</li>
-                  <li>ML and AI solutions for quotations, customer savings, happiness index, and demand prediction.</li>
+      <div  class="flex flex-column-reverse md:flex-row w-90rem surface-ground">
+          <div class="ml-0 lg:ml-7 add">
+              <ul class="Route">
+                <span class="text-blue-700 text-3xl ml-0 sm:ml-4">Third Eye : Dashboarding, Reporting & Trip Analysis</span> 
+                  <li class="w-50rem  text-sm line-height-1 m-3 bg-white text-bluegray-800 list-none pl-0 lg:pl-3 flex align-items-center bg-white p-2 border-round-md mb-4 p-3">Empowers you with comprehensive analysis and analytics dashboards and reports by harnessing the capabilities of artificial intelligence and machine learning.</li>
+                  <li class="w-50rem  text-sm line-height-1 m-3 bg-white text-bluegray-800 list-none pl-0 lg:pl-3 flex align-items-center bg-white p-2 border-round-md mb-4 p-3">Dashboards provide insights on monthly trips, vehicle utilization, on-time delivery, order and revenue analysis, and CO2 emission savings.</li>
+                  <li class="w-50rem  text-sm line-height-1 m-3 bg-white text-bluegray-800 list-none pl-0 lg:pl-3 flex align-items-center bg-white p-2 border-round-md mb-4 p-3">Control Tower reports for data integrity and tech performance.</li>
+                  <li class="w-50rem  text-sm line-height-1 m-3 bg-white text-bluegray-800 list-none pl-0 lg:pl-3 flex align-items-center bg-white p-2 border-round-md mb-4 p-3">ML and AI solutions for quotations, customer savings, happiness index, and demand prediction.</li>
               </ul>
           </div>
-          <div class="img" class=" ml-6" style="height: 50%; width: 100%; border: 0;">
+          <div class=" lg:ml-6" style="max-width: 100%; display: block; height: auto;">
               <img src="sfour.png" alt="Image 4">
           </div>
       </div>

@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { CarouselModule } from 'primeng/carousel';
+import { GetInfoComponent } from '../get-info/get-info.component';
+import { FooterComponent } from '../footer/footer.component';
 
 @Component({
   selector: 'app-service-ai-ml-based-solution',
   standalone: true,
-  imports: [CarouselModule],
+  imports: [CarouselModule,GetInfoComponent,FooterComponent],
   templateUrl: './service-ai-ml-based-solution.component.html',
   styleUrl: './service-ai-ml-based-solution.component.css'
 })
@@ -12,7 +14,7 @@ export class ServiceAIMLBasedSolutionComponent {
   products: any[] = [
     {
       image: 'tabler-icon-border-all.svg',
-      title: 'Multiple Models, No "One-Size-Fits-All”',
+      title: 'Multiple Models, No "One-Size-Fits-</br> All”',
       description: 'We employ a diverse range of models to craft tailored solutions that address the nuances of individual challenges effectively.'
     },
     {
